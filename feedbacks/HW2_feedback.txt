@@ -1,0 +1,25 @@
+HW2 Feedback
+
+
+Test Suite: 270/270
+
+
+Valgrind: 5/5
+
+
+Modularity: 5/5
+
+
+Blending with starter code: 4/5
+(-1) Use DTLookupDocumentName in doctable step 2 instead of reimplementing 
+
+Robustness and error checking: 4/5
+(-1) Ignores failure of PushLinkedList in memindex step 4
+
+Comments and other style issues: 5/5
+
+
+Search shell: 2/5
+(-3) All capitalized input causes Verify333 to fail
+
+Bonus: 0/5

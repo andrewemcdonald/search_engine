@@ -1,0 +1,92 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "333server",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/hw4/http333d",
+      "args": ["8888", "../projdocs", "../hw3/unit_test_indices/bash.idx",
+        "../hw3/unit_test_indices/books.idx", "../hw3/unit_test_indices/enron.idx",
+        "../hw3/unit_test_indices/wiki.idx"],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}/hw4",
+      "environment": [],
+      "externalConsole": true,
+      "MIMode": "gdb",
+      "preLaunchTask": "make hw4",
+      "setupCommands": [
+          {
+              "description": "Enable pretty-printing for gdb",
+              "text": "-enable-pretty-printing",
+              "ignoreFailures": true
+          }
+      ]
+    },
+  {
+    "name": "HW4 Test Suite",
+    "type": "cppdbg",
+    "request": "launch",
+    "program": "${workspaceFolder}/hw4/test_suite",
+    "args": [],
+    "stopAtEntry": false,
+    "cwd": "${workspaceFolder}/hw4",
+    "environment": [],
+    "externalConsole": true,
+    "MIMode": "gdb",
+    "preLaunchTask": "make hw4",
+    "setupCommands": [
+        {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+        }
+    ]
+  },
+    {
+      "name": "Build and Debug hw3 test_suite",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/hw3/test_suite",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}/hw3",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      /* "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ], */
+      "preLaunchTask": "make hw3",
+      "miDebuggerPath": "/bin/gdb"
+    },
+    {
+      "name": "Build and Debug hw3 fileindexbuilder",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/hw3/buildfileindex",
+      "args": ["./my_tests/", "/tmp/minitestdebug.index"],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}/hw3",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      /* "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ], */
+      "preLaunchTask": "make hw3",
+      "miDebuggerPath": "/bin/gdb"
+    }
+  ]
+}

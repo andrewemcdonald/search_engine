@@ -1,0 +1,13 @@
+{
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "make hw4",
+      "command": "cd ${workspaceFolder}/hw4; make",
+      "options": {
+        "cwd": "/bin"
+      }
+    }
+  ],
+  "version": "2.0.0"
+}

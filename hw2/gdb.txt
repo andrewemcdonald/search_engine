@@ -1,0 +1,130 @@
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+Starting program: /homes/iws/mcdonand/WindowsFolders/MyDocs/cse333-19sp-mcdonand/hw2/test_suite 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+
+Breakpoint 1, MIAddPostingList (index=0x65d2e0, word=0x7100f0 "\300\210\252", docid=1, positions=0x710110) at memindex.c:131
+#0  MIAddPostingList (index=0x65d2e0, word=0x7100f0 "\300\210\252", docid=1, positions=0x710110) at memindex.c:131
+(More stack frames follow...)
+#0  MIAddPostingList (index=0x65d2e0, word=0x7100f0 "\300\210\252", docid=1, positions=0x710110) at memindex.c:131
+#1  0x0000000000429c8c in HandleFile (fpath=0x65e710 "./test_tree/bash-4.2/support/texi2html", doctable=0x7fffffffd5f0, 
+    index=0x7fffffffd5e8) at filecrawler.c:191
+(More stack frames follow...)
+Continuing.
+
+Breakpoint 1, MIAddPostingList (index=0x65d2e0, word=0x6cec50 "0\222", <incomplete sequence \321>, docid=1, positions=0x6cec70)
+    at memindex.c:131
+#0  MIAddPostingList (index=0x65d2e0, word=0x6cec50 "0\222", <incomplete sequence \321>, docid=1, positions=0x6cec70) at memindex.c:131
+#1  0x0000000000429c8c in HandleFile (fpath=0x65e710 "./test_tree/bash-4.2/support/texi2html", doctable=0x7fffffffd5f0, 
+    index=0x7fffffffd5e8) at filecrawler.c:191
+(More stack frames follow...)
+Continuing.
+[Inferior 1 (process 28942) exited with code 01]
+The program is not being run.
+
+
+
+[==========] Running 6 tests from 4 test cases.
+[----------] Global test environment set-up.
+HW2: there are 270 points available.
+[----------] 3 tests from Test_FileParser
+[ RUN      ] Test_FileParser.FPTestReadFile
+ (10/270)
+ (20/270)
+ (30/270)
+ (40/270)
+[       OK ] Test_FileParser.FPTestReadFile (14 ms)
+[ RUN      ] Test_FileParser.FPTestBuildWordHT
+ (50/270)
+ (60/270)
+ (70/270)
+ (80/270)
+ (90/270)
+ (100/270)
+[       OK ] Test_FileParser.FPTestBuildWordHT (4 ms)
+[ RUN      ] Test_FileParser.PTestBigBuildWordHT
+ (110/270)
+[       OK ] Test_FileParser.PTestBigBuildWordHT (24 ms)
+[----------] 3 tests from Test_FileParser (42 ms total)
+
+[----------] 1 test from Test_DocTable
+[ RUN      ] Test_DocTable.DTTestSimple
+ (115/270)
+ (120/270)
+ (125/270)
+ (130/270)
+ (140/270)
+[       OK ] Test_DocTable.DTTestSimple (2 ms)
+[----------] 1 test from Test_DocTable (2 ms total)
+
+[----------] 1 test from Test_FileCrawler
+[ RUN      ] Test_FileCrawler.FCTestSimple
+ (150/270)
+ (160/270)
+ (170/270)
+ (180/270)
+[       OK ] Test_FileCrawler.FCTestSimple (249 ms)
+[----------] 1 test from Test_FileCrawler (249 ms total)
+
+[----------] 1 test from Test_MemIndex
+[ RUN      ] Test_MemIndex.MITestSimple
+test_memindex.cc:43: Failure
+Value of: 3852U
+  Actual: 3852
+Expected: MINumWordsInMemIndex(idx)
+Which is: 4601
+[  FAILED  ] Test_MemIndex.MITestSimple (38 ms)
+[----------] 1 test from Test_MemIndex (38 ms total)
+
+[----------] Global test environment tear-down
+
+You earned 180 out of 270 points available (66.6667%)
+
+[==========] 6 tests from 4 test cases ran. (331 ms total)
+[  PASSED  ] 5 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] Test_MemIndex.MITestSimple
+
+ 1 FAILED TEST
+
+
+
+Andrew's New Debug session...
+
+warning: Currently logging to gdb.txt.  Turn the logging off and on to make the new setting effective.
+$1 = "hello"
+Undefined command: "logging".  Try "help".
+Undefined command: "logging".  Try "help".
+Starting program: /homes/iws/mcdonand/WindowsFolders/MyDocs/cse333-19sp-mcdonand/hw2/test_suite 
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-260.el7_6.4.x86_64
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+warning: Source file is more recent than executable.
+
+Breakpoint 1, MIAddPostingList (index=0x65d2e0, word=0x7100f0 "\300\210\252", docid=1, positions=0x710110) at memindex.c:131
+Missing separate debuginfos, use: debuginfo-install libgcc-4.8.5-36.el7_6.1.x86_64 libstdc++-4.8.5-36.el7_6.1.x86_64
+$2 = 0x7100f0 "\300\210\252"
+$3 = 0x6837b0 "bye"
+A syntax error in expression, near `'.
+A syntax error in expression, near `'.
+$4 = 7521797099535714137
+Unterminated string in expression.
+$5 = 6301627429897277719
+Continuing.
+
+Breakpoint 1, MIAddPostingList (index=0x65d2e0, word=0x6cec50 "p\222", <incomplete sequence \321>, docid=1, positions=0x6cec70)
+    at memindex.c:131
+Already logging to gdb.txt.
+$6 = 0x6cec50 "p\222", <incomplete sequence \321>
+$7 = 0x699bb0 "extensions"
+Starting program: /homes/iws/mcdonand/WindowsFolders/MyDocs/cse333-19sp-mcdonand/hw2/test_suite 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+
+Breakpoint 1, MIAddPostingList (index=0x65d2e0, word=0x7100f0 "\300\210\252", docid=1, positions=0x710110) at memindex.c:131
+$8 = 38895331533755587
+$9 = 6301627429897277719
+$10 = 7521797099535714137
+$11 = 0x7100f0 "\300\210\252"
+$12 = 5260625154654081543

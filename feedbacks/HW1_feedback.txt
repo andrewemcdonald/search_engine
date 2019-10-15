@@ -1,0 +1,23 @@
+HW1 Feedback
+
+
+Test Suite: 230/230
+
+
+Valgrind: 5/5
+
+
+Modularity: 5/5
+
+
+Blending with starter code: 5/5
+
+
+Robustness and error checking: 3/5
+(-1) LLMakeIterator can return null if malloc fails as well. Findkey doesn't check this, and much of your code resultantly relies on the malloc() in LLMakeIterator not failing.
+(-1) Removing + adding a node instead of replacing value in-place in InsertHashTable when the key already exists.
+
+Comments and other style issues: 5/5
+(-0) Unecessary malloc when using LLIteratorGetPayload. Just allocate a local struct on the stack and pass in the address to it.
+
+Extra credit: 0/5

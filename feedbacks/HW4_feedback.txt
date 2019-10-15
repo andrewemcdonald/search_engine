@@ -1,0 +1,26 @@
+HW4 Feedback
+
+
+Test Suite: 140/140
+
+
+Valgrind: 0/5
+(-5) Several read/write errors
+
+Modularity: 5/5
+
+
+Robustness and error checking: 8/10
+(-1) FileReader.cc: Does not check IsPathSafe(basedir_, fullfile). 
+(-1) HttpServer_ThrFn does not check if GetNextRequest fails.
+
+
+
+Comments, Blending with starter code and other style issues:  5/5
+
+Server Test:  4/10
+(-2) Says "No results found" for any multiple-word query.
+(-2) Wikipedia pages are not linked.
+(-2) Segmentation fault (bad allocation)
+
+Bonus: 0/5

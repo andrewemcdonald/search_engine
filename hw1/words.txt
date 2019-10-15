@@ -1,0 +1,59 @@
+[==========] Running 8 tests from 2 test cases.
+[----------] Global test environment set-up.
+HW1: there are 230 points available.
+[----------] 5 tests from Test_LinkedList
+[ RUN      ] Test_LinkedList.TestLinkedListBasic
+ (5/230)
+ (10/230)
+[       OK ] Test_LinkedList.TestLinkedListBasic (10 ms)
+[ RUN      ] Test_LinkedList.TestLinkedListPushPop
+ (20/230)
+ (30/230)
+ (35/230)
+ (45/230)
+ (55/230)
+[       OK ] Test_LinkedList.TestLinkedListPushPop (15 ms)
+[ RUN      ] Test_LinkedList.TestLinkedListAppendSlice
+ (60/230)
+ (65/230)
+ (70/230)
+ (75/230)
+ (80/230)
+[       OK ] Test_LinkedList.TestLinkedListAppendSlice (13 ms)
+[ RUN      ] Test_LinkedList.TestLinkedListSort
+ (85/230)
+[       OK ] Test_LinkedList.TestLinkedListSort (7 ms)
+[ RUN      ] Test_LinkedList.TestLLIteratorBasic
+ (90/230)
+ (95/230)
+ (105/230)
+ (115/230)
+ (125/230)
+ (130/230)
+[       OK ] Test_LinkedList.TestLLIteratorBasic (25 ms)
+[----------] 5 tests from Test_LinkedList (75 ms total)
+
+[----------] 3 tests from Test_HashTable
+[ RUN      ] Test_HashTable.HTSTestAllocFree
+ (140/230)
+[       OK ] Test_HashTable.HTSTestAllocFree (4 ms)
+[ RUN      ] Test_HashTable.HTSTestInsertLookupRemove
+ (150/230)
+ (160/230)
+[       OK ] Test_HashTable.HTSTestInsertLookupRemove (28 ms)
+[ RUN      ] Test_HashTable.HTSTestIterator
+ (170/230)
+ (180/230)
+ (200/230)
+ (210/230)
+ (220/230)
+ (230/230)
+[       OK ] Test_HashTable.HTSTestIterator (20 ms)
+[----------] 3 tests from Test_HashTable (53 ms total)
+
+[----------] Global test environment tear-down
+
+You earned 230 out of 230 points available (100%)
+
+[==========] 8 tests from 2 test cases ran. (165 ms total)
+[  PASSED  ] 8 tests.

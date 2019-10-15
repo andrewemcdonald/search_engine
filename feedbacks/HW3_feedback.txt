@@ -1,0 +1,29 @@
+HW3 Feedback
+
+
+Test Suite: 180/180
+
+
+Valgrind: 5/5
+
+
+Modularity: 5/5
+
+
+Robustness and error checking: 2/5
+  (-2) Ignores failures of WriteMemIndex
+  (-1) Calculates checksum reading one byte at a time. Read more bytes into a buffer instead of calling fread for every byte. [Modularity]
+
+Comments, Blending, and other style issues:: 2/5
+  (-2) Several cpplint issues
+  (-1) Uses C idiom in C++ code - NULL, malloc, free.
+
+
+Index file writing: 5/5
+
+
+Search shell: 4/5
+  (-1) [no results] not printed when there are no results
+  (-0) whitespace difference between output and expected output
+
+Bonus: 0/5
